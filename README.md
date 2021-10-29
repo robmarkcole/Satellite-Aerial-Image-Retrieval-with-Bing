@@ -7,14 +7,15 @@ python3 ProbeMapMatching.py lat1, lon1, lat2, lon2,
 
 where (lat1, lon1) is the latitude and longitude of the upper-left coordinate, and (lat2, lon2) is the latitude and longitude of the lower-right coordinate. Use QGIS with Bing layer in `EPSG:4326` to find these. The script tolerates arbitrary coordinates input, as long as the two coordinates are diagonal. The retrieved image will be stored in `.\output` folder. The name of the image will follow the 'aerialImage_{}.jpeg' ending with the retrieval level. 
 
-Some sample retrievals:
-
-1. Eiffel Tower in Paris:
+1. Eiffel Tower:
 
 ```bash
 python3 aerialImageRetrieval.py 48.859261 2.293362 48.856953 2.296194
 ```
 
+<p align="center">
+<img src="https://github.com/robmarkcole/Satellite-Aerial-Image-Retrieval/blob/master/output/Eiffel_Tower.jpeg" width="500">
+</p>
 
 2. Random London suburb:
 
@@ -22,6 +23,9 @@ python3 aerialImageRetrieval.py 48.859261 2.293362 48.856953 2.296194
 python3 aerialImageRetrieval.py  51.388 -0.2598 51.393 -0.2538
 ```
 
+<p align="center">
+<img src="https://github.com/robmarkcole/Satellite-Aerial-Image-Retrieval/blob/master/output/london_suburb.jpeg" width="500">
+</p>
 
 ### Source Files:
 1. `tilesystem.py`:
